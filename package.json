@@ -1,3 +1,15 @@
 {
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "ECOMMERCE",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "author": "Joshua Vaughn",
+  "license": "ISC"
 }
