@@ -8,7 +8,7 @@ const Header = () => {
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand href="/">Biotix Wellness</Navbar.Brand>
+            <Navbar.Brand>Biotix Wellness</Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -16,7 +16,7 @@ const Header = () => {
             <Nav className="ml-auto">
               <LinkContainer to="/cart">
                 <Nav.Link>
-                  <i className="fas fa-shopping-cart"></i> Home
+                  <i className="fas fa-shopping-cart"></i> Cart
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/login">
