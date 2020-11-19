@@ -1,3 +1,4 @@
+// Need to remove id from products because MongoDB automatically adds its own
 const products = [
   {
     _id: '1',
@@ -8,6 +9,7 @@ const products = [
     brand: 'Apple',
     category: 'Electronics',
     price: 89.99,
+
     countInStock: 0,
     rating: 4.5,
     numReviews: 12,
