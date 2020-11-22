@@ -6,7 +6,6 @@ import productRoutes from './routes/productRoutes.js';
 dotenv.config();
 
 connectDB();
-// colors();
 
 const app = express();
 
