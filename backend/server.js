@@ -1,4 +1,4 @@
-import express from 'exoress';
+import express from 'express';
 import dotenv from 'dotenv';
 import colors from 'colors';
 import connectDB from './config/db.js';
@@ -6,7 +6,7 @@ import productRoutes from './routes/productRoutes.js';
 dotenv.config();
 
 connectDB();
-colors();
+// colors();
 
 const app = express();
 
