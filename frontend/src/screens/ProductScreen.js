@@ -15,6 +15,7 @@ const ProductScreen = ({history, match}) => {
   useEffect(() => {
     dispatch(listProductDetails(match.params.id));
   }, [dispatch, match]);
+
   const addToCartHandler = () => {
     history.push(`/cart/${match.params.id}?qty=${qty}`);
   };
@@ -50,7 +51,7 @@ const ProductScreen = ({history, match}) => {
               </ListGroup.Item>
             </ListGroup>
           </Col>
-          <Col>
+          <Col md={3}>
             <Card>
               <ListGroup variant="flush">
                 <ListGroup.Item>
@@ -92,7 +93,7 @@ const ProductScreen = ({history, match}) => {
                 )}
                 <ListGroup.Item>
                   <Button
-                    OnClick={addToCartHandler}
+                    onClick={addToCartHandler}
                     className="btn-block"
                     type="button"
                     disabled={product.countInStock === 0}>
