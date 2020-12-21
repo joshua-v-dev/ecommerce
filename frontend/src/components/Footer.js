@@ -3,12 +3,15 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 const Footer = () => {
   return (
-    <Container>
-      <Row>
-        <Col className="text-center py-3">Copyright &copy; Off Set Designs</Col>
-        <footer>Footer</footer>;
-      </Row>
-    </Container>
+    <footer>
+      <Container>
+        <Row>
+          <Col className="text-center py-3">
+            Copyright &copy; Off Set Designs
+          </Col>
+        </Row>
+      </Container>
+    </footer>
   );
 };
 
