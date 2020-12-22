@@ -7,8 +7,8 @@ import CheckoutSteps from '../components/CheckoutSteps';
 import {createOrder} from '../actions/orderActions';
 
 const PlaceOrderScreen = ({history}) => {
-  const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+  const cart = useSelector((state) => state.cart);
 
   const addDecimals = (num) => {
     return (Math.round(num * 100) / 100).toFixed(2);
@@ -42,6 +42,7 @@ const PlaceOrderScreen = ({history}) => {
         shippingAddress: cart.shippingAddress,
         paymentMethod: cart.paymentMethod,
         itemsPrice: cart.itemsPrice,
+        shippingPrice: cart.shippingPrice,
         taxPrice: cart.taxPrice,
         totalPrice: cart.totalPrice,
       }),
