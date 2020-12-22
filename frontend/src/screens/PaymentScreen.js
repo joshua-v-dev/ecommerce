@@ -18,7 +18,7 @@ const PaymentScreen = ({history}) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(savePaymentMethod({paymentMethod}));
+    dispatch(savePaymentMethod(paymentMethod));
     history.push('/placeorder');
   };
 
@@ -34,7 +34,7 @@ const PaymentScreen = ({history}) => {
             <Form.Check
               type="radio"
               label="PayPal or Credit Card"
-              nid="PayPal"
+              id="PayPal"
               name="paymentMethod"
               value="PayPal"
               checked
