@@ -32,7 +32,7 @@ const UserEditScreen = ({match, history}) => {
       dispatch({type: USER_UPDATE_RESET});
       history.push('/admin/userlist');
     } else {
-      if (!user.name || user._id !== userId) {
+      if (!user || user._id !== userId) {
         dispatch(getUserDetails(userId));
       } else {
         setName(user.name);
@@ -48,7 +48,7 @@ const UserEditScreen = ({match, history}) => {
   };
   return (
     <>
-      <Link to="/admin/userist" className="btn btn-light my-3">
+      <Link to="/admin/userlist" className="btn btn-light my-3">
         Go Back
       </Link>
 
