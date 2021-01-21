@@ -59,7 +59,7 @@ const createProduct = asyncHandler(async (req, res) => {
     name: 'Sample name',
     price: 0,
     user: req.user._id,
-    image: '/images/sample.jpeg',
+    image: '/images/sample.jpg',
     brand: 'Sample brand',
     category: 'Example Category',
     countInStock: 10,
@@ -67,7 +67,7 @@ const createProduct = asyncHandler(async (req, res) => {
     description: 'Sample description',
   });
   const createdProduct = await product.save();
-  res.status(201).json(createdProduct);
+  res.status(201).json(product);
 });
 
 // @desc     Update a product
